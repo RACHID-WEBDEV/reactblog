@@ -88,8 +88,8 @@ export default function LandingHero() {
 
             <motion.div variants={varFadeInRight}>
               <Typography sx={{ color: 'common.white' }}>
-                The starting point for your next project based on easy-to-customize Material-UI © helps you build apps
-                faster and better.
+                A Blog Website to learn things in the best way quickly and efficiently from Bloggers who has knowledge
+                solving problem related to Tech.
               </Typography>
             </motion.div>
 
@@ -105,14 +105,14 @@ export default function LandingHero() {
               </Button>
             </motion.div>
 
-            <Stack direction="row" spacing={1.5} justifyContent={{ xs: 'center', md: 'flex-start' }}>
+            {/* <Stack direction="row" spacing={1.5} justifyContent={{ xs: 'center', md: 'flex-start' }}>
               <motion.img variants={varFadeInRight} src="/static/home/ic_sketch.svg" />
               <motion.img variants={varFadeInRight} src="/static/home/ic_figma.svg" />
               <motion.img variants={varFadeInRight} src="/static/home/ic_material.svg" />
               <motion.img variants={varFadeInRight} src="/static/home/ic_react.svg" />
               <motion.img variants={varFadeInRight} src="/static/home/ic_js.svg" />
               <motion.img variants={varFadeInRight} src="/static/home/ic_ts.svg" />
-            </Stack>
+            </Stack> */}
           </ContentStyle>
         </Container>
       </RootStyle>

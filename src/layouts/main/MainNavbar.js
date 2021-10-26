@@ -86,8 +86,6 @@ export default function MainNavbar() {
             Sign Up
           </Button> */}
 
-          {/* <Avatar>R</Avatar> */}
-
           <MHidden width="mdUp">
             <MenuMobile isOffset={isOffset} isHome={isHome} navConfig={navConfig} />
           </MHidden>

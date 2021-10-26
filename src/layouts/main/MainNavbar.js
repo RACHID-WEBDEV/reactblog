@@ -1,7 +1,7 @@
 import { NavLink as RouterLink, useLocation } from 'react-router-dom';
 // material
 import { styled } from '@material-ui/core/styles';
-import { Box, Button, AppBar, Toolbar, Container } from '@material-ui/core';
+import { Box, AppBar, Toolbar, Container } from '@material-ui/core';
 // hooks
 import useOffSetTop from '../../hooks/useOffSetTop';
 // components
@@ -12,6 +12,7 @@ import { MHidden } from '../../components/@material-extend';
 import MenuDesktop from './MenuDesktop';
 import MenuMobile from './MenuMobile';
 import navConfig from './MenuConfig';
+import Searchbar from '../dashboard/Searchbar';
 
 // ----------------------------------------------------------------------
 
@@ -72,7 +73,7 @@ export default function MainNavbar() {
             <Logo />
           </RouterLink>
           <Label color="info" sx={{ ml: 1 }}>
-            Simple 2.5.0
+            Blog Dev
           </Label>
           <Box sx={{ flexGrow: 1 }} />
 
@@ -80,9 +81,12 @@ export default function MainNavbar() {
             <MenuDesktop isOffset={isOffset} isHome={isHome} navConfig={navConfig} />
           </MHidden>
 
-          <Button variant="contained" target="_blank" href="https://material-ui.com/store/items/minimal-dashboard/">
-            Purchase Now
-          </Button>
+          <Searchbar />
+          {/* <Button variant="contained" target="_blank" href="https://roatek.com.ng/">
+            Sign Up
+          </Button> */}
+
+          {/* <Avatar>R</Avatar> */}
 
           <MHidden width="mdUp">
             <MenuMobile isOffset={isOffset} isHome={isHome} navConfig={navConfig} />

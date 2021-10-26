@@ -22,7 +22,7 @@ const SOCIALS = [
 
 const LINKS = [
   {
-    headline: 'Minimal',
+    headline: 'Blog Dev',
     children: [
       { name: 'About us', href: '#' },
       { name: 'Contact us', href: '#' },
@@ -39,8 +39,8 @@ const LINKS = [
   {
     headline: 'Contact',
     children: [
-      { name: 'support@minimals.cc', href: '#' },
-      { name: 'Los Angeles, 359  Hidden Valley Road', href: '#' }
+      { name: 'info@roatek.com.ng', href: '#' },
+      { name: '32 Alh Taofeek Cresent Lagos', href: '#' }
     ]
   }
 ];

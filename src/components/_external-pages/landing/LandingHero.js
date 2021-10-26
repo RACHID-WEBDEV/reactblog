@@ -4,7 +4,7 @@ import flashFill from '@iconify/icons-eva/flash-fill';
 import { Link as RouterLink } from 'react-router-dom';
 // material
 import { styled } from '@material-ui/core/styles';
-import { Button, Box, Link, Container, Typography, Stack } from '@material-ui/core';
+import { Button, Box, Container, Typography, Stack } from '@material-ui/core';
 // routes
 import { PATH_DASHBOARD } from '../../../routes/paths';
 //
@@ -76,11 +76,12 @@ export default function LandingHero() {
         <Container maxWidth="lg">
           <ContentStyle>
             <motion.div variants={varFadeInRight}>
+              <br /> <br />
               <Typography variant="h1" sx={{ color: 'common.white' }}>
-                Start a <br />
-                new project <br /> with
+                We're just <br />
+                Getting started <br /> with
                 <Typography component="span" variant="h1" sx={{ color: 'primary.main' }}>
-                  &nbsp;Minimal
+                  &nbsp;The Blog
                 </Typography>
               </Typography>
             </motion.div>
@@ -91,24 +92,6 @@ export default function LandingHero() {
                 faster and better.
               </Typography>
             </motion.div>
-
-            <Stack
-              component={motion.div}
-              variants={varFadeInRight}
-              direction="row"
-              spacing={1}
-              justifyContent={{ xs: 'center', md: 'flex-start' }}
-            >
-              <img alt="sketch icon" src="/static/home/ic_sketch_small.svg" width={20} height={20} />
-              <Link
-                underline="always"
-                href="https://www.sketch.com/s/0fa4699d-a3ff-4cd5-a3a7-d851eb7e17f0"
-                target="_blank"
-                sx={{ color: 'common.white' }}
-              >
-                Preview in Sketch Cloud
-              </Link>
-            </Stack>
 
             <motion.div variants={varFadeInRight}>
               <Button
